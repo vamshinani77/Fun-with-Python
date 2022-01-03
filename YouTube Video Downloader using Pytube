@@ -1,0 +1,5 @@
+from pytube import YouTube
+link = input("URL")
+video = YouTube(link)
+stream = video.streams.first()
+stream.download()
